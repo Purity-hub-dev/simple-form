@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@200;400&display=swap');
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body{
+  background-color: blueviolet;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+}
+
+header{
+  padding: 20px;
+  background-color: #ffffff;
+  width: 350px;
+  height: 350px;
+}
+.details h1{
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+.details h1::first-letter{
+  text-decoration: underline;
+  color: blueviolet;
+}
+.input-icon{
+    display: flex;
+    gap: 0.5rem;
+    border-bottom: 1px solid  rgb(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    line-height: 2rem;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+}
+.icon{
+  font-size: 20px;
+  color: blueviolet;
+}
+.fill input, .pass input{
+    border: none;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    outline: none;
+}
+.lock-password{
+    display: flex;
+    gap: 0.5rem;
+    border-bottom: 1px solid  rgb(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    line-height: 2rem;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+}
+.lock-password i{
+  font-size: 20px;
+  color: blueviolet;
+}
+.content h4{
+  font-weight: 400;
+  font-size: 14px;
+  color: blueviolet;
+  float: left;
+}
+.content p{
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+}
+
+.content button{
+    width: 100%;
+    padding: 10px;
+    color: burlywood;
+    background: rgb(138, 43, 226);
+  border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    margin: 2rem auto 15px;
+}
+button:hover{
+    cursor: pointer;
+}
+  a{
+  color: blueviolet;
+  text-decoration: none;
+  font-size: 15px;
+  text-align: center;
+  font-weight: 400;
+}
+.footer{
+    background: url(/image.jpg)no-repeat center;
+    width: 350px;
+    height: 350px;
+    background-size: cover;
+    font-size: 18px;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    z-index: -1;
+    color: #ffffff;
+}
+.footer::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(138, 43, 226, 0.42);
+  z-index: -1;
+}
+.footer h3{
+  padding-top: 100px;
+  font-size: 20px;
+  color: #ffffff;
+}
+@media(max-width: 500px){
+  .container{
+    flex-direction: column-reverse;
+    margin: 50px 0 ;
+  }
+}
